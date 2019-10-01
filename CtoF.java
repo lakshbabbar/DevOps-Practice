@@ -1,4 +1,4 @@
-package com.hcl.java;
+
 
 public class CtoF {
  public void calc(double c){
