@@ -1,0 +1,64 @@
+git - merge and rebase
+
+Continuous Integration is a development practice that requires developers to integrate code into a shared repository several times a day.
+
+
+jenkins - Integration (Core of DevOps)(Continuous Integration)
+jenkins is a self=contained open source automation server which can be used to automate all sorts of tasks related to building, testing and delivering or deploying software.
+Installed by three ways 
+1. System packages
+2. Docker
+3. run standalone by any machine with a JRE installed.
+Master - Slave Architecture Master schedules the jobs and the slaves do the jobs
+
+
+Job - a unit of work for a project
+View = user defined collection of jobs or a workflow
+Master - the central jenkins master does job scheduling
+Slave - executes one or more jobs within
+Workspace - the working area where a job is carried out
+Plugin - user defined collection of jobs or a workflow
+
+Manage jenkins - only available for the admins
+manage plugins      and        Global tool configuration - to specify the path
+available
+Github
+install without restart
+
+New or Existing Item
+Configure
+source code management
+Git
+
+
+
+install gitbash
+create a folder C://jenkins download jenkins.war (Generic War package) file from jenkins.io
+java -jar jenkins.war --httpPort=9080
+show you a jenkins admin password like a64628910a074712bf34b4593b689151
+This may also be found at: C:\Users\coalesce\.jenkins\secrets\initialAdminPassword
+go to chrome and localhost:9080
+suggestible installation
+
+
+echo %PATH%   to see the path of everything
+
+
+
+gitWebHooks - push mechanism - trigger a build by changing the code in the github - Continuous Integration 
+to do this 
+go to github -> repo-> settings-> webhooks-> change or edit the payload url - ONly public ip no localhost
+jenkins github url build trigger enable github hook trigger for gitscan polling 
+in build specify the commands in Execute Shell (For Linux) //////   echo $ for linux and echo % for windows  
+Example ------>>> echo "job name --->" ${JOB_NAME}
+
+
+
+In maven project
+build trigger =  enable build whenever a snapshot dependency is built
+in build pom.xml
+goals = clean package
+post = Run regardless of build result 
+
+ 
+https://github.com/
