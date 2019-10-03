@@ -17,7 +17,7 @@ View = user defined collection of jobs or a workflow
 Master - the central jenkins master does job scheduling
 Slave - executes one or more jobs within
 Workspace - the working area where a job is carried out
-Plugin - user defined collection of jobs or a workflow
+Plugins - interfaces to increase functionality
 
 Manage jenkins - only available for the admins
 manage plugins      and        Global tool configuration - to specify the path
